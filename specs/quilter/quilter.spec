@@ -12,6 +12,9 @@ License:        GPLv3 and BSD and MIT
 URL:            https://github.com/lainsce/%{name}
 Source0:        https://github.com/lainsce/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 
+# Add patch to fix building with vala 0.42
+Patch0:         00-fix-vala-042-errors.patch
+
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  libappstream-glib
@@ -37,7 +40,7 @@ Quilter is a text editor that let's you focus on writing.
 
 
 %prep
-%autosetup
+%autosetup -p1
 
 
 %build

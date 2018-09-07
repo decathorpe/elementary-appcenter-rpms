@@ -1,0 +1,60 @@
+{
+    "_default": {
+        "1": {
+            "name": "Spice-up",
+            "package_name": "Spice-up",
+            "package_version": "1.5.1",
+            "rpm_last_release": "1%{?dist}",
+            "rpm_last_version": "1.5.1",
+            "url_last_version": "1.5.1"
+        },
+        "2": {
+            "name": "bookworm",
+            "package_name": "bookworm",
+            "package_version": "0.9.9",
+            "rpm_last_release": "2%{?dist}",
+            "rpm_last_version": "0.9.9",
+            "url_last_version": "0.9.9"
+        },
+        "3": {
+            "name": "hourglass",
+            "package_name": "hourglass",
+            "package_version": "1.1.1",
+            "rpm_last_release": "2%{?dist}",
+            "rpm_last_version": "1.1.1",
+            "url_last_version": "1.1.1"
+        },
+        "4": {
+            "name": "nasc",
+            "package_name": "nasc",
+            "package_version": "0.4.7",
+            "rpm_last_release": "4%{?dist}",
+            "rpm_last_version": "0.4.7",
+            "url_last_version": "0.4.7"
+        },
+        "5": {
+            "name": "nimbus",
+            "package_name": "nimbus",
+            "package_version": "0.3.2",
+            "rpm_last_release": "1%{?dist}",
+            "rpm_last_version": "0.3.2",
+            "url_last_version": "0.3.2"
+        },
+        "6": {
+            "name": "quilter",
+            "package_name": "quilter",
+            "package_version": "1.6.3",
+            "rpm_last_release": "2%{?dist}",
+            "rpm_last_version": "1.6.3",
+            "url_last_version": "1.6.3"
+        },
+        "7": {
+            "name": "tomato",
+            "package_name": "tomato",
+            "package_version": "2.0.2",
+            "rpm_last_release": "2%{?dist}",
+            "rpm_last_version": "2.0.2",
+            "url_last_version": "2.0.2"
+        }
+    }
+}

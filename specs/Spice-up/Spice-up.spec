@@ -1,9 +1,8 @@
 %global appname  com.github.philip-scott.spice-up
-%global dbusname com.github.philip_scott.spice_up
 
 Name:           Spice-up
 Summary:        Create simple and beautiful presentations on the Linux desktop
-Version:        1.5.1
+Version:        1.5.2
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -60,7 +59,7 @@ desktop-file-validate \
     %{buildroot}/%{_datadir}/applications/%{appname}.desktop
 
 appstream-util validate-relax --nonet \
-    %{buildroot}/%{_datadir}/metainfo/%{dbusname}.appdata.xml
+    %{buildroot}/%{_datadir}/metainfo/%{appname}.appdata.xml
 
 
 %files -f %{appname}.lang
@@ -74,11 +73,14 @@ appstream-util validate-relax --nonet \
 %{_datadir}/glib-2.0/schemas/%{appname}.gschema.xml
 %{_datadir}/icons/hicolor/*/apps/%{appname}*.svg
 %{_datadir}/icons/hicolor/*/mimetypes/application-x-spiceup.svg
-%{_datadir}/metainfo/%{dbusname}.appdata.xml
-%{_datadir}/mime/packages/%{dbusname}.mime.xml
+%{_datadir}/metainfo/%{appname}.appdata.xml
+%{_datadir}/mime/packages/%{appname}.mime.xml
 
 
 %changelog
+* Sun Sep 09 2018 Fabio Valentini <decathorpe@gmail.com> - 1.5.2-1
+- Update to version 1.5.2.
+
 * Thu Aug 23 2018 Fabio Valentini <decathorpe@gmail.com> - 1.5.1-1
 - Update to version 1.5.1.
 

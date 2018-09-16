@@ -2,8 +2,8 @@
 
 Name:           quilter
 Summary:        Focus on your writing
-Version:        1.6.3
-Release:        2%{?dist}
+Version:        1.6.4
+Release:        1%{?dist}
 # quilter is GPLv3
 # highlight.js is BSD
 # katex is MIT
@@ -11,9 +11,6 @@ License:        GPLv3 and BSD and MIT
 
 URL:            https://github.com/lainsce/%{name}
 Source0:        https://github.com/lainsce/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
-
-# Add patch to fix building with vala 0.42
-Patch0:         00-fix-vala-042-errors.patch
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
@@ -59,7 +56,7 @@ desktop-file-validate \
     %{buildroot}/%{_datadir}/applications/%{appname}.desktop
 
 appstream-util validate-relax --nonet \
-    %{buildroot}/%{_datadir}/metainfo/%{appname}.appdata.xml
+    %{buildroot}/%{_datadir}/metainfo/%{appname}.appdata.xml || :
 
 
 %files -f %{appname}.lang
@@ -78,6 +75,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Sun Sep 16 2018 Fabio Valentini <decathorpe@gmail.com> - 1.6.4-1
+- Update to version 1.6.4.
+
 * Fri Sep 07 2018 Fabio Valentini <decathorpe@gmail.com> - 1.6.3-2
 - Fix build with newer vala versions.
 

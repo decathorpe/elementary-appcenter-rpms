@@ -3,10 +3,10 @@
         "1": {
             "name": "Spice-up",
             "package_name": "Spice-up",
-            "package_version": "1.5.2",
+            "package_version": "1.6.0",
             "rpm_last_release": "1%{?dist}",
-            "rpm_last_version": "1.5.2",
-            "url_last_version": "1.5.2"
+            "rpm_last_version": "1.6.0",
+            "url_last_version": "1.6.0"
         },
         "2": {
             "name": "bookworm",

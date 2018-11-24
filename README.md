@@ -18,21 +18,29 @@ packages (for various reasons) - yet.
 The current build status of all non-official fedora packages can be seen at
 <https://copr.fedorainfracloud.org/coprs/decathorpe/elementary-appcenter/monitor/>.
 
-| package name | f27  | f28  | f29  | rawhide |
-| ------------ | ---- | ---- | ---- | ------- |
-| [bookworm]   | DONE | DONE | DONE | DONE    |
-| [hourglass]  | DONE | DONE | DONE | DONE    |
-| [nasc]       | DONE | DONE | DONE | DONE    |
-| [nimbus]     | DONE | ---- | ---- | ----    |
-| [quilter]    | DONE | DONE | DONE | DONE    |
-| [Spice-up]   | ---- | DONE | DONE | DONE    |
-| [tomato]     | DONE | DONE | DONE | DONE    |
+| package name | f28  | f29  | rawhide |
+| ------------ | ---- | ---- | ------- |
+| [aesop]      | DONE | DONE | DONE    |
+| [alias]      | DONE | DONE | DONE    |
+| [bookworm]   | DONE | DONE | DONE    |
+| [hourglass]  | DONE | DONE | DONE    |
+| [nasc]       | DONE | DONE | DONE    |
+| [nimbus]     | DONE | DONE | DONE    |
+| [Notes-up]   | DONE | DONE | DONE    |
+| [quilter]    | DONE | DONE | DONE    |
+| [Spice-up]   | DONE | ---- | ----    |
+| [taxi]       | DONE | DONE | DONE    |
+| [tomato]     | DONE | DONE | DONE    |
 
+[aesop]: https://github.com/lainsce/aesop
+[alias]: https://github.com/bartzaalberg/alias
 [bookworm]: https://github.com/babluboy/bookworm
 [hourglass]: https://github.com/sgpthomas/hourglass
 [nasc]: https://github.com/parnold-x/nasc
 [nimbus]: https://github.com/danrabbit/nimbus
+[Notes-up]: https://github.com/Philip-Scott/Notes-up
 [quilter]: https://github.com/lainsce/quilter
 [Spice-up]: https://github.com/Philip-Scott/Spice-up
+[taxi]: https://github.com/Alecaddd/taxi
 [tomato]: https://github.com/luizaugustomm/tomato
 

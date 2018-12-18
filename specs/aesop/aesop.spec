@@ -2,7 +2,7 @@
 
 Name:           aesop
 Summary:        Simplest PDF viewer around
-Version:        1.0.7
+Version:        1.0.8
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -61,6 +61,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Tue Dec 18 2018 Fabio Valentini <decathorpe@gmail.com> - 1.0.8-1
+- Update to version 1.0.8.
+
 * Sat Oct 06 2018 Fabio Valentini <decathorpe@gmail.com> - 1.0.7-1
 - Update to version 1.0.7.
 

@@ -2,7 +2,7 @@
 
 Name:           Notes-up
 Summary:        Markdown notes editor & manager
-Version:        1.6.1
+Version:        1.6.2
 Release:        1%{?dist}
 License:        GPLv2+ and BSD
 
@@ -80,6 +80,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Wed Dec 19 2018 Fabio Valentini <decathorpe@gmail.com> - 1.6.2-1
+- Update to version 1.6.2.
+
 * Mon Sep 24 2018 Fabio Valentini <decathorpe@gmail.com> - 1.6.1-1
 - Update to version 1.6.1.
 

@@ -2,20 +2,17 @@
 
 Name:           alias
 Summary:        Simplify your commands
-Version:        0.1.2
+Version:        1.0.0
 Release:        1%{?dist}
 License:        GPLv3+
 
 URL:            https://github.com/bartzaalberg/alias
 Source0:        https://github.com/bartzaalberg/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  cmake
-BuildRequires:  cmake-elementary
 BuildRequires:  desktop-file-utils
-BuildRequires:  gcc
-BuildRequires:  gcc-c++
 BuildRequires:  gettext
 BuildRequires:  libappstream-glib
+BuildRequires:  meson
 BuildRequires:  vala
 
 BuildRequires:  pkgconfig(granite)
@@ -33,20 +30,12 @@ Alias is a tool to manage your bash aliases.
 
 
 %build
-mkdir build
-
-pushd build
-%cmake ..
-%make_build
-popd
+%meson
+%meson_build
 
 
 %install
-pushd build
-%make_install
-popd
-
-%find_lang %{appname}
+%meson_install
 
 
 %check
@@ -57,7 +46,7 @@ appstream-util validate-relax --nonet \
     %{buildroot}/%{_datadir}/metainfo/%{appname}.appdata.xml
 
 
-%files -f %{appname}.lang
+%files
 %doc README.md
 %license LICENSE
 
@@ -69,6 +58,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Thu Jan 10 2019 Fabio Valentini <decathorpe@gmail.com> - 1.0.0-1
+- Update to version 1.0.0.
+
 * Mon Oct 15 2018 Fabio Valentini <decathorpe@gmail.com> - 0.1.2-1
 - Update to version 0.1.2.
 

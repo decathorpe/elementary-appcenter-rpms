@@ -2,7 +2,7 @@
 
 Name:           alias
 Summary:        Simplify your commands
-Version:        1.0.0
+Version:        1.1.0
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -37,6 +37,8 @@ Alias is a tool to manage your bash aliases.
 %install
 %meson_install
 
+%find_lang %{appname}
+
 
 %check
 desktop-file-validate \
@@ -46,7 +48,7 @@ appstream-util validate-relax --nonet \
     %{buildroot}/%{_datadir}/metainfo/%{appname}.appdata.xml
 
 
-%files
+%files -f %{appname}.lang
 %doc README.md
 %license LICENSE
 
@@ -58,6 +60,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Thu Jan 17 2019 Fabio Valentini <decathorpe@gmail.com> - 1.1.0-1
+- Update to version 1.1.0.
+
 * Thu Jan 10 2019 Fabio Valentini <decathorpe@gmail.com> - 1.0.0-1
 - Update to version 1.0.0.
 

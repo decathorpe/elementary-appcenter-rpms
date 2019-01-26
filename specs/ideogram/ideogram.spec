@@ -2,7 +2,7 @@
 
 Name:           ideogram
 Summary:        Insert emoji anywhere, even in non-native apps
-Version:        1.1.3
+Version:        1.2.0
 Release:        1%{?dist}
 License:        GPLv3
 
@@ -45,6 +45,8 @@ Change the shortcut in System Settings →Keyboard → Shortcuts → Custom.
 %install
 %meson_install
 
+%find_lang %{appname}
+
 
 %check
 desktop-file-validate \
@@ -54,7 +56,7 @@ appstream-util validate-relax --nonet \
     %{buildroot}/%{_datadir}/metainfo/%{appname}.appdata.xml
 
 
-%files
+%files -f %{appname}.lang
 %doc README.md
 %license LICENSE
 
@@ -66,6 +68,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Sat Jan 26 2019 Fabio Valentini <decathorpe@gmail.com> - 1.2.0-1
+- Update to version 1.2.0.
+
 * Tue Dec 04 2018 Fabio Valentini <decathorpe@gmail.com> - 1.1.3-1
 - Initial packaging.
 

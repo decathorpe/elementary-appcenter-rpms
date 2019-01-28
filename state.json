@@ -91,10 +91,10 @@
         "12": {
             "name": "ideogram",
             "package_name": "ideogram",
-            "package_version": "1.2.0",
+            "package_version": "1.2.1",
             "rpm_last_release": "1%{?dist}",
-            "rpm_last_version": "1.2.0",
-            "url_last_version": "1.2.0"
+            "rpm_last_version": "1.2.1",
+            "url_last_version": "1.2.1"
         },
         "13": {
             "name": "Transporter",

@@ -2,7 +2,7 @@
 
 Name:           ideogram
 Summary:        Insert emoji anywhere, even in non-native apps
-Version:        1.2.0
+Version:        1.2.1
 Release:        1%{?dist}
 License:        GPLv3
 
@@ -68,6 +68,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Mon Jan 28 2019 Fabio Valentini <decathorpe@gmail.com> - 1.2.1-1
+- Update to version 1.2.1.
+
 * Sat Jan 26 2019 Fabio Valentini <decathorpe@gmail.com> - 1.2.0-1
 - Update to version 1.2.0.
 

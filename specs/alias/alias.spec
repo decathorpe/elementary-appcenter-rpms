@@ -2,7 +2,7 @@
 
 Name:           alias
 Summary:        Simplify your commands
-Version:        1.3.1
+Version:        1.4.0
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -55,11 +55,15 @@ appstream-util validate-relax --nonet \
 %{_bindir}/%{appname}
 
 %{_datadir}/applications/%{appname}.desktop
+%{_datadir}/glib-2.0/schemas/%{appname}.gschema.xml
 %{_datadir}/icons/hicolor/*/apps/%{appname}.svg
 %{_datadir}/metainfo/%{appname}.appdata.xml
 
 
 %changelog
+* Wed Jan 30 2019 Fabio Valentini <decathorpe@gmail.com> - 1.4.0-1
+- Update to version 1.4.0.
+
 * Thu Jan 24 2019 Fabio Valentini <decathorpe@gmail.com> - 1.3.1-1
 - Update to version 1.3.1.
 

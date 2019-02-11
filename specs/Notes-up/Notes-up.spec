@@ -3,7 +3,7 @@
 Name:           Notes-up
 Summary:        Markdown notes editor & manager
 Version:        1.6.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        GPLv2+ and BSD
 
 URL:            https://github.com/Philip-Scott/Notes-up
@@ -28,6 +28,7 @@ BuildRequires:  pkgconfig(libmarkdown)
 BuildRequires:  pkgconfig(sqlite3) >= 3.5.9
 BuildRequires:  pkgconfig(webkit2gtk-4.0)
 
+Requires:       contractor
 Requires:       hicolor-icon-theme
 
 Provides:       bundled(highlight.js) = 9.10.0
@@ -80,6 +81,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Mon Feb 11 2019 Fabio Valentini <decathorpe@gmail.com> - 1.6.3-2
+- Add missing contractor dependency.
+
 * Fri Dec 21 2018 Fabio Valentini <decathorpe@gmail.com> - 1.6.3-1
 - Update to version 1.6.3.
 

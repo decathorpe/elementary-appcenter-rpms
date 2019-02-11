@@ -44,8 +44,7 @@ able to write beautiful notes fast and easy using the markdown format.
 
 %build
 mkdir build && pushd build
-%cmake ..
-%make_build
+%cmake -Dnoele=1 ..%make_build
 popd
 
 

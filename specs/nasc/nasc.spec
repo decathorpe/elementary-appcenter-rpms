@@ -2,14 +2,12 @@
 
 Name:           nasc
 Summary:        Do maths like a normal person
-Version:        0.4.7
-Release:        4%{?dist}
+Version:        0.5.2
+Release:        1%{?dist}
 License:        GPLv3
 
 URL:            https://github.com/parnold-x/%{name}
 Source0:        https://github.com/parnold-x/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
-
-Patch0:         00-link-privately.patch
 
 BuildRequires:  cmake
 BuildRequires:  desktop-file-utils
@@ -69,7 +67,7 @@ appstream-util validate-relax --nonet \
 %doc AUTHORS README.md
 %license COPYING
 
-%{_bindir}/%{name}
+%{_bindir}/%{appname}
 
 %{_datadir}/applications/%{appname}.desktop
 %{_datadir}/glib-2.0/schemas/%{appname}.gschema.xml
@@ -79,6 +77,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Sun Feb 17 2019 Fabio Valentini <decathorpe@gmail.com> - 0.5.2-1
+- Update to version 0.5.2.
+
 * Fri Sep 07 2018 Fabio Valentini <decathorpe@gmail.com> - 0.4.7-4
 - Add patch to fix libqalculatenasc library.
 

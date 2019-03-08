@@ -2,7 +2,7 @@
 
 Name:           quilter
 Summary:        Focus on your writing
-Version:        1.7.4
+Version:        1.7.5
 Release:        1%{?dist}
 # quilter is GPLv3
 # highlight.js is BSD
@@ -75,6 +75,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Fri Mar 08 2019 Fabio Valentini <decathorpe@gmail.com> - 1.7.5-1
+- Update to version 1.7.5.
+
 * Fri Mar 01 2019 Fabio Valentini <decathorpe@gmail.com> - 1.7.4-1
 - Update to version 1.7.4.
 

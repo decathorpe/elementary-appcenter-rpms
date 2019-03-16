@@ -2,7 +2,7 @@
 
 Name:           aesop
 Summary:        Simplest PDF viewer around
-Version:        1.0.8
+Version:        1.1.0
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -39,6 +39,8 @@ The simplest PDF viewer around.
 %install
 %meson_install
 
+%find_lang %{appname}
+
 
 %check
 desktop-file-validate \
@@ -48,7 +50,7 @@ appstream-util validate-relax --nonet \
     %{buildroot}/%{_datadir}/metainfo/%{appname}.appdata.xml
 
 
-%files
+%files -f %{appname}.lang
 %doc README.md
 %license LICENSE
 
@@ -61,6 +63,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Sat Mar 16 2019 Fabio Valentini <decathorpe@gmail.com> - 1.1.0-1
+- Update to version 1.1.0.
+
 * Tue Dec 18 2018 Fabio Valentini <decathorpe@gmail.com> - 1.0.8-1
 - Update to version 1.0.8.
 

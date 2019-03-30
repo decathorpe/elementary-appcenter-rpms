@@ -2,8 +2,8 @@
 
 Name:           Notes-up
 Summary:        Markdown notes editor & manager
-Version:        1.6.3
-Release:        2%{?dist}
+Version:        2.0.0
+Release:        1%{?dist}
 License:        GPLv2+ and BSD
 
 URL:            https://github.com/Philip-Scott/Notes-up
@@ -69,7 +69,7 @@ appstream-util validate-relax --nonet \
 %files -f notes-up.lang
 %doc README.md
 %license LICENSE
-%license data/assets/highlight.LICENSE
+%license data/assets/highlightjs/highlight.LICENSE
 
 %{_bindir}/%{appname}
 
@@ -81,6 +81,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Sat Mar 30 2019 Fabio Valentini <decathorpe@gmail.com> - 2.0.0-1
+- Update to version 2.0.0.
+
 * Mon Feb 11 2019 Fabio Valentini <decathorpe@gmail.com> - 1.6.3-2
 - Add missing contractor dependency.
 

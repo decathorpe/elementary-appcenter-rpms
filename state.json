@@ -43,10 +43,10 @@
         "6": {
             "name": "quilter",
             "package_name": "quilter",
-            "package_version": "1.8.2",
+            "package_version": "1.8.3",
             "rpm_last_release": "1%{?dist}",
-            "rpm_last_version": "1.8.2",
-            "url_last_version": "1.8.2"
+            "rpm_last_version": "1.8.3",
+            "url_last_version": "1.8.3"
         },
         "7": {
             "name": "tomato",

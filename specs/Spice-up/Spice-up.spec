@@ -2,7 +2,7 @@
 
 Name:           Spice-up
 Summary:        Create simple and beautiful presentations on the Linux desktop
-Version:        1.8.0
+Version:        1.8.1
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -78,6 +78,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Wed May 01 2019 Fabio Valentini <decathorpe@gmail.com> - 1.8.1-1
+- Update to version 1.8.1.
+
 * Sun Jan 20 2019 Fabio Valentini <decathorpe@gmail.com> - 1.8.0-1
 - Update to version 1.8.0.
 

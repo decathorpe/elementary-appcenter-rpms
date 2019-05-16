@@ -2,7 +2,7 @@
 
 Name:           nasc
 Summary:        Do maths like a normal person
-Version:        0.5.2
+Version:        0.5.4
 Release:        1%{?dist}
 License:        GPLv3
 
@@ -77,6 +77,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Thu May 16 2019 Fabio Valentini <decathorpe@gmail.com> - 0.5.4-1
+- Update to version 0.5.4.
+
 * Sun Feb 17 2019 Fabio Valentini <decathorpe@gmail.com> - 0.5.2-1
 - Update to version 0.5.2.
 

@@ -2,7 +2,7 @@
 
 Name:           alias
 Summary:        Simplify your commands
-Version:        1.4.0
+Version:        1.5.2
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -61,6 +61,9 @@ appstream-util validate-relax --nonet \
 
 
 %changelog
+* Fri Jul 19 2019 Fabio Valentini <decathorpe@gmail.com> - 1.5.2-1
+- Update to version 1.5.2.
+
 * Wed Jan 30 2019 Fabio Valentini <decathorpe@gmail.com> - 1.4.0-1
 - Update to version 1.4.0.
 

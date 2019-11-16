@@ -4,7 +4,7 @@
 
 Name:           monitor
 Summary:        Manage processes and monitor system resources
-Version:        0.6.0
+Version:        0.6.1
 Release:        1%{?dist}
 License:        GPLv3+
 
@@ -73,6 +73,9 @@ appstreamcli validate --nonet \
 
 
 %changelog
+* Sat Nov 16 2019 Fabio Valentini <decathorpe@gmail.com> - 0.6.1-1
+- Update to version 0.6.1.
+
 * Tue Oct 29 2019 Christopher Crouse <mail@amz-x.com> - 0.6.0-1
 - Initial import
 

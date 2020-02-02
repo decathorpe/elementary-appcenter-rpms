@@ -43,10 +43,10 @@
         "8": {
             "name": "aesop",
             "package_name": "aesop",
-            "package_version": "1.1.4",
+            "package_version": "1.2.3",
             "rpm_last_release": "1%{?dist}",
-            "rpm_last_version": "1.1.4",
-            "url_last_version": "1.1.4"
+            "rpm_last_version": "1.2.3",
+            "url_last_version": "1.2.3"
         },
         "9": {
             "name": "alias",

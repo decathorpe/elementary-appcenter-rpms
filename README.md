@@ -1,8 +1,4 @@
-# elementary-appcenter-rpms
+This repository has been moved to pagure:
 
-I use this repository to keep track of files related to packaging / building
-stable releases of "made for elementary" applications for fedora - either as a
-staging ground before they can be imported as official fedora packages, or as
-an external repository for applications that won't be accepted as proper fedora
-packages (for various reasons) - yet.
+<https://pagure.io/pantheon-fedora/rpms-appcenter>
 
